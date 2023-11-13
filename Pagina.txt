@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+
+<title> Titulo da pagina</title>
+<meta charset="UTF-8">
+<font size="7">
+         <h1> nem sei o que <br>
+	tô fazendo aqui</h1>
+         <b> IF Goiano  </b> <br/> 
+         <center> <i> <S> Urutaí <s> </i> </center> 
+</font>
+</body>
+</html>

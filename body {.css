@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #d08080;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: none; /* Oculta o ícone do menu por padrão */
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Oculta o menu por padrão em telas menores */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu.active {
+        display: flex; /* Exibe o menu quando o ícone do menu é clicado */
+    }
+
+    .menu-icon {
+        display: block; /* Exibe o ícone do menu */
+    }
+}

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-br>
+<head>
+
+<title> Tarefa Angular</title>
+<img src="Imagens\angular.png"  width="500">
+<meta charset="UTF-8"
+
+</head>
+<body bgcolor="gray">
+<a name="voltar"></a>
+
+	<img src="Imagens\angular.png"  width="50"> 
+	
+	
+	<br>
+    <font size="6"> 
+		<center> <h1> <i> ANGULAR </i> </h1> </center> 
+		</font>
+	
+		<center> 
+			<p> <b> <i> <s> Tarefa sobre o manual do Angular </s> </i> </b> </p> <br/>
+		 </center
+	<font size="3">
+	<a href="#Introdução do Angular"> <h2>Introdução do Angular</h2></a>
+	<a href="#Versões"><h2>Versões</h2> </a>
+	<a href="#Instalando o Angular"> <h2>Instalando o Angular</h2></a>
+	<a href="#Verificando a instalação"> <h2>Verificando a instalação</h2></a>
+	<a href="#Criando um projeto em Angular"> <h2>Criando um projeto em Angular</h2></a>
+	<a href="#Executando aplicações em Angular"> <h2>Executando aplicações em Angular</h2></a>
+	</font>
+
+  <p aling="left">
+	<center> 
+		<h2> <u> Introdução do Angular </u>  <h/2>
+	</center>
+
+
+
+<a name="Introdução do Angular" ></a>
+
+<p>
+Angular é uma plataforma de desenvolvimento web de código aberto criada e mantida pelo Google. 
+Ela é utilizada para construir aplicativos web dinâmicos e interativos 
+especialmente single-page applications (SPAs), onde a maior parte do processamento 
+ocorre no navegador do usuário, resultando em uma experiência mais fluida e responsiva 
+
+O núcleo do Angular é baseado em TypeScript, uma linguagem de programação que adiciona recursos ao JavaScript
+ como tipos estáticos e melhorias na organização do código. <br>
+O Angular fornece um conjunto abrangente de ferramentas e recursos que facilitam o desenvolvimento, 
+teste e manutenção de aplicativos complexos.<br>
+</p>
+
+<br>
+<a href="#voltar"> <img src="Imagens/seta.png" width="30"></a>
+
+<p aling="left">
+	<center> 
+		<h2> <u> Versões </u> </h2>
+
+	</center>
+ 
+<br>
+</p>
+<p>
+Atualmente, há duas versões principais do Angular:<br>
+<i> AngularJS e Angular.</i>  
+<br> <br> 
+
+<img src="Imagens\js.jpg"  width="100"> 
+O AngularJS é a versão mais antiga, e é baseado em um modelo de desenvolvimento de MVC (Model- View-Controller).  <br>
+<br> <img src="Imagens\angular.png"  width="100">
+Já o Angular é o nome da nova versão, que é uma reescrita completa do AngularJS. <br>
+A nova versão utiliza o modelo de desenvolvimento de MVC através do sistema de módulos e componentes, sendo um framework mais moderno e integrado com outras tecnologias.
+
+</p>
+
+<p aling="center">
+	<center>
+		<h2> <u> Instalando o Angular </u> </h2>
+	</center>
+</p> 
+
+<p>
+O primeiro passo para utilizar o Angular CLI é realizar a sua instalação e, para tal, é necessário ter o Node.JS instalado. 
+Caso ainda não o tenha, acesse o site do Node.js e baixe a última versão destinada ao seu sistema operacional.
+<br> Com o Node.JS instalado, temos à disposição o comando npm, necessário para instalar o Angular CLI. 
+Neste ponto, será preciso abrir o terminal do seu sistema operacional e digitar a instrução:
+<br>
+npm install -g @angular/cli
+<br>
+Essa instrução, normalmente, requer um bom tempo para que seja concluída, 
+pois diversas bibliotecas do Node.JS serão obtidas através da internet.<br> 
+Concluída a instalação, o Angular CLI está à nossa disposição através do comando ng, 
+que é um programa para ser executado a partir da linha de comando e para o qual podemos passar diversos parâmetros. 
+É dessa forma que criamos um novo projeto em Angular, criamos artefatos, realizamos o build do projeto, entre outras opções.
+<p>
+	<br> 
+	<br> <i>(clique na imagem e será direcionado para o video de instalação do angular) </i> 
+</p>
+
+</p>
+
+<a name="Instalando o Angular" ></a>
+
+<a href=" https://www.youtube.com/watch?v=oKDDTPLLbGA&t=5s">
+		<img src="Imagens/img11.PNG"  width="500">
+	</a>
+<br>
+
+	<a href="#voltar"> <img src="Imagens/seta.png" width="30"></a>
+<p>
+	<center>
+		<h2> <u> Verificando a instalação </u> </h2>
+	</center>
+</p>
+
+<p>
+Verifique a instalação global
+ O Angular CLI pode ser instalado globalmente em seu sistema, permitindo que você crie e gerencie projetos de qualquer diretório. <br>
+Para verificar se o Angular CLI está instalado globalmente, você pode executar:
+ng --version
+Isso também mostrará a versão do Angular CLI instalada.
+Se você receber informações sobre a versão do Angular CLI após executar um dos comandos acima, isso significa que o Angular está instalado em seu sistema. 
+</P>
+
+<a name="Verificando a instalação" ></a>
+
+
+<p>
+	<a href="#voltar"> <img src="Imagens/seta.png" width="30"></a>
+	<center> 
+		<h2> <u> Criando um projeto em Angular </u> </h2>
+	</center>
+</p>
+
+<p>
+Fazer um projeto no Angular envolve várias etapas, 
+desde a configuração inicial até o desenvolvimento de componentes e serviços.
+Use o Angular CLI: 
+ng new NomeDoProjeto
+Navegar para o projeto: Acesse o diretório recém-criado:
+cd NomeDoProjeto
+
+Desenvolvimento
+Componentes: Os componentes são blocos de construção fundamentais do Angular. 
+Você pode criar novos componentes usando o Angular CLI:
+ng generate component NomeDoComponente
+Serviços: Os serviços são usados para compartilhar lógica de negócios entre componentes.
+ Crie um serviço usando o Angular CLI:
+ng generate service NomeDoServico
+Roteamento: Se o seu projeto envolver várias páginas ou seções, 
+você precisará configurar o roteamento.
+ Isso é feito no arquivo app-routing.module.ts.
+Templates e Estilos: Desenvolva os templates dos seus componentes usando HTML e estilize-os com CSS.
+ O Angular permite o uso de folhas de estilo globais ou encapsulados por componente.
+Execução e Teste
+xecutar o aplicativo: Inicie o servidor de desenvolvimento usando o Angular CLI:
+ng serve
+Acesso ao aplicativo: Abra um navegador e navegue para
+ http://localhost:4200/ para visualizar o aplicativo em execução.
+Implantação
+Compilação: Antes de implantar, você precisa compilar o aplicativo para produção:
+ng build --prod
+Implantação em Servidor: Os arquivos gerados após a compilação estão localizados na pasta dist. 
+Você pode fazer o upload desses arquivos para um servidor web para implantar o aplicativo.
+<a name="Criando um projeto em Angular" ></a>
+</p>
+
+<img src="Imagens\angular.png"  width="50">
+<a href="#voltar"> <img src="Imagens/seta.png" width="50"></a>
+
+</body>
+</html>

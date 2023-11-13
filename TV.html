@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>TV</title>
+</head>
+<body>
+    
+    <title>TV </title>
+    <style>
+        .tv {
+            width: 500px;
+            height: 400px;
+            border: 2px solid rgb(33, 15, 198);
+            background-color: rgb(22, 38, 180);
+            color: rgb(35, 170, 194);
+            text-align: center;
+            font-size: 24px;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tv" id="tv">Desligada</div>
+    <div>
+        <button onclick="togglePower()">Ligar/Desligar</button>
+        <button onclick="changeChannel('Record')">Canal: Record</button>
+        <button onclick="changeChannel('Netflix')">Canal: Netflix</button>
+        <button onclick="changeVolume(true)">Aumentar Volume</button>
+        <button onclick="changeVolume(false)">Diminuir Volume</button>
+    </div>
+
+    <script>
+        let power = false;
+        let currentChannel = 'Desligada';
+        let volume = 50;
+
+        function togglePower() {
+            power = !power;
+            const tv = document.getElementById('tv');
+            if (power) {
+                tv.innerText = `Canal: ${currentChannel} - Volume: ${volume}`;
+            } else {
+                tv.innerText = 'Desligada';
+            }
+        }
+
+        function changeChannel(channel) {
+            if (power) {
+                currentChannel = channel;
+                const tv = document.getElementById('tv');
+                tv.innerText = `Canal: ${currentChannel} - Volume: ${volume}`;
+            }
+        }
+
+        function changeVolume(increase) {
+            if (power) {
+                if (increase && volume < 100) {
+                    volume += 10;
+                } else if (!increase && volume > 0) {
+                    volume -= 10;
+                }
+                const tv = document.getElementById('tv');
+                tv.innerText = `Canal: ${currentChannel} - Volume: ${volume}`;
+            }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>
