@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Animação</title>
+    <p> Esse é uma atividade simples utilizando css</p> 
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-image: url('Imagens/fnd.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .animation-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            font-size: 24px;
+            color: #1b1919;
+            background-color: #c534db; 
+            padding: 10px;
+            animation: moveText 5s linear infinite, rotateText 5s linear infinite;
+        }
+
+        @keyframes moveText {
+            0%, 100% {
+                transform: translate(-70%, -80%);
+            }
+            50% {
+                transform: translate(-0%, -80%);
+            }
+        }
+
+        @keyframes rotateText {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="animation-container">
+    <p><i> Exemplo de animação com CSS </i></p>
+</div>
+
+</body>
+</html>

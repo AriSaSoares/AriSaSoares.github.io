@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulário</title>
+    <meta charset="UTF-8">
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #cc5555;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #d7a1a1;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #3d0808;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #3d0808;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #d72f2f;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #d72f2f;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #db3445;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #46070e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2> Formulário Estilizado </h2>
+
+        <label for="nome"> <i>Nome: </i></label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email"><i> E-mail:</i></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone"> <i> Telefone:</i></label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="Endereço"> <i> Endereço: </i></label>
+        <input type="tel" id="tEndereço" name="Endereço" required>
+
+        <label for="Instagram"> <i> Instagram: </i></label>
+        <input type="tel" id="Instagram" name="Instagram" required>
+
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso" required>
+            <option value="">Escolha seu curso</option>
+            <option value="Agronomia">Agronomia</option>
+            <option value="Engenharia Agrícola ">Engenharia Agrícola</option>
+            <option value="Med. Veterinária">Med. Veterinária</option>
+            <option value=" Sistema da Informação ">  Sistema da Informação </option>
+            <option value=" Biologia">  Biologia </option>
+            <option value=" Química ">  Química </option>
+            <option value=" Matemática  "> Matemática  </option>
+            <option value=" Educação Física "> Educação Física  </option>
+            <option value=" Nutrição ">  Nutrição </option>
+         
+        </select>
+
+        <label for="sexo">Sexo:</label>
+        <label><input type="radio" name="sexo" value="feminino" required> Feminino</label>
+        <label><input type="radio" name="sexo" value="masculino" required> Masculino</label>
+       
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

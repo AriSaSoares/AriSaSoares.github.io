@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Exercício Formulários</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: rgb(106, 44, 106);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            border: 1px solid white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #4cafa0;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #4595a0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário De Pesquisa Estudantil </h1>
+     <p> Por gentileza informa seu nome: </p>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <fieldset>
+            <legend>Estudante do Instituto Federal?</legend>
+            <label for="estado">Campus:</label>
+            <select id="estado" name="Campus">
+                <option value=" ">Escolha seu Campus</option>
+                <option value="p1">IF Goiano Campus Ipameri</option>
+                <option value="p2">IF Goiano Campus Trindade</option>
+                <option value="p3">IF Goiano Campus Urutaí</option>
+                <option value="p4">IF Goiano Rio Verde</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informe seu curso</legend>
+            <div class="radio">
+                <b>Selecione seu curso</b><br />
+                <input id="1" type="radio" name="option" value="1" />
+                <label for="1">Agronomia</label><br />
+                <input id="2" type="radio" name="option" value="2" />
+                <label for="2">Engenharia Agrícola</label><br />
+                <input id="3" type="radio" name="option" value="3" />
+                <label for="3">Nutrição</label>
+                <input id="4" type="radio" name="option" value="4" />
+                <label for="4">Biologia</label>
+                <input id="5" type="radio" name="option" value="5" />
+                <label for="5">Química</label>
+                <input id="6" type="radio" name="option" value="6" />
+                <label for="6">Educação Física</label>
+                <input id="7" type="radio" name="option" value="7" />
+                <label for="7">Matemática</label>
+                <input id="8" type="radio" name="option" value="8" />
+                <label for="8"> Sistema da Informação </label>
+                <input id="9" type="radio" name="option" value="9" />
+                <label for="9"> Sistemas para Internet </label>
+                <input id="10" type="radio" name="option" value="10" />
+                <label for="10"> Medicina Veterinária </label>
+            </div>
+        </fieldset>
+        <p> Tem interesse em outros cursos, se sim qual ? </p>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+
+</html>

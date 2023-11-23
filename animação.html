@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Animação CSS</title>
+    
+    <h1> <center> <i> Exercicio de tema livre sobre animação CSS </i></center> </h1>
+    <style>
+       
+        .rotacao-geometrica {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            margin: 10px;
+            animation: rotacao 4s linear infinite; 
+
+        }
+        @keyframes rotacao {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Adicionar cores diferentes */
+        .rotacao-geometrica:nth-child(1) {
+            background-color: #124e75;
+        }
+
+        .rotacao-geometrica:nth-child(2) {
+            background-color: #3972cd;
+            
+        }
+
+        .rotacao-geometrica:nth-child(3) {
+            background-color: #236ba1;
+            
+        }
+
+        .rotacao-geometrica:nth-child(4) {
+            background-color: #2ea4cc;
+        }
+
+        .rotacao-geometrica:nth-child(5) {
+            background-color: #5999b6;
+        }
+
+        .rotacao-geometrica:nth-child(6) {
+            background-color: #1abcb9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="rotacao-geometrica"></div>
+    <div class="rotacao-geometrica"></div>
+    <div class="rotacao-geometrica"></div>
+    <div class="rotacao-geometrica"></div>
+    <div class="rotacao-geometrica"></div>
+    <div class="rotacao-geometrica"></div>
+
+</body>
+</html>

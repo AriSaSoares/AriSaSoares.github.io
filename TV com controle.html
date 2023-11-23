@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisão</title>
+    <link rel="stylesheet" href="televisao.css">
+    <script src="controlar.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="televisao">
+            <h1>Exemplo de uma Tv com controle remoto</h1>
+            <img src="Imagens/televisao.jpg" id="imagem" class="tv" height="400">
+            <br>
+            <img src="imagens/branco2.jpg" id="televisao" class="branco" height="210">
+            <div class="vol-bar-container">
+                <p id="volume" name="volume">1</p>
+                <input type="range" min="0" max="100" value="1" class="vol-bar" id="volumeRange" oninput="alterarVolume(this.value)">
+            </div>
+        </div>
+        <div class="controle">
+            <section>
+                <button><img src="imagens/cliick.jpg" alt="Liga/Desliga" class="btn-img" onclick="alternarEstado()"></button>
+                <button><img src="imagens/st.jpg" alt="Liga/Desliga" class="btn-img"></button>
+            </section>
+            <section>
+                <button><img src="imagens/volume.jpg" alt="aumentar volume" class="btn-img" onclick="aumentar()"></button>
+                <label for="">VOL</label>
+                <button><img src="imagens/menos.jpg" alt="reduzir volume" class="btn-img" onclick="reduzir()"></button>
+            </section>
+            <section>
+                <button><img src="imagens/seta.jpg" alt="Aumentar canal" class="btn-img" onclick="aumentarCanal()"></button>
+                <label for="">CHA</label>
+                <button><img src="imagens/seta2.jpg" alt="Reduzir canal" class="btn-img" onclick="reduzirCanal()"></button>
+                <p id="canal" class="canal" name="canal">1</p>
+            </section>
+        </div>
+    </div>
+</body>
+<footer>
+    <br><br>           
+</footer>
+</html>

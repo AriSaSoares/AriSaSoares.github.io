@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Formulário</title>
+    <meta charset="UTF-8">
+    <style>
+
+        body {
+            background-color: #62c7a5;
+            color: #070101;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            border: 1px solid white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #0e250f;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0e250f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>PESQUISA SIMPLES PARA VERIFICAR O NÍVEL DE FACILIDADE NAS MATÉRIAS ATUAL.</h1>
+
+    <p>
+    
+    <form>
+        <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"> 
+            <br>
+
+            <label for="matricula">Matricula:</label>
+            <input type="text" id="matricula" matricula="matricula"><br><br>
+
+           
+        </fieldset>
+
+        <fieldset>
+            <legend>Estudante do S.I campus Urutaí?</legend>
+            <label for="estado">Informe</label>
+            <select id="estado" name="Campus">
+                <option value="">Selecione sua opção atual:</option>
+                <option value="p1">Sim. </option>
+                <option value="p2">Não.  </option>
+            
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual o seu perido atual ?</legend>
+            <label for="estado">Informe</label>
+            <select id="estado" name="Campus">
+                <option value="">Selecione sua opção atual:</option>
+                <option value="p1">2º período</option>
+                <option value="p2">4º período   </option>
+                <option value="p3">6º período   </option>
+                <option value="p4">8º período   </option>
+            
+            </select>
+        </fieldset>
+         <p>
+            QUAL SEU NIVEL DE FACILIDADE COM A MATERIA DE "ALGEBRA"
+            <label for="mensagem"></label><br>
+         <textarea id="mensagem" name="mensagem" rows="2" cols="30"></textarea><br><br>
+         </p>
+         
+
+         <p>
+            QUAL SEU NIVEL DE FACILIDADE COM A MATERIA DE "BANCO DE DADOS 2"
+         </p>
+         <label for="mensagem">INFORME: </label><br>
+         <textarea id="mensagem" name="mensagem" rows="2" cols="30"></textarea><br><br>
+
+         <p>
+            QUAL SEU NIVEL DE FACILIDADE COM A MATERIA DE "ESTRUTURA DE DADOS 2"
+         </p>
+         <label for="mensagem">INFORME: </label><br>
+         <textarea id="mensagem" name="mensagem" rows="2" cols="30"></textarea><br><br>
+
+         <p>
+            QUAL SEU NIVEL DE FACILIDADE COM A MATERIA DE "REDES DE COMPUTADORES"
+         </p>
+         <label for="mensagem">INFORME: </label><br>
+         <textarea id="mensagem" name="mensagem" rows="2" cols="30"></textarea><br><br>
+
+         <p>
+            QUAL SEU NIVEL DE FACILIDADE COM A MATERIA DE "HTML"
+         </p>
+         <label for="mensagem">INFORME: </label><br>
+         <textarea id="mensagem" name="mensagem" rows="2" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+</body>
+
+</html>

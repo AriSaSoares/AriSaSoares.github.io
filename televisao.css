@@ -1,0 +1,84 @@
+body{
+    background-color: rgb(201, 189, 189);
+}
+.branco{
+    margin: -367px 0 0 107px;
+    position: absolute;
+}
+
+.televisao{
+    width: 700px;
+    height: 700px;
+}
+
+.controle{
+    background-color: rgb(21, 101, 101);
+    width: 200px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: -85px;
+}
+
+.container{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 6%;
+    box-shadow:  5px 5px 5px #999797;
+}
+
+button :hover{
+    transform: translateX(5%) translateY(5%);
+    background-color: rgba(61, 101, 219, 0.651);
+}
+
+.video{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 1.5%;
+    box-shadow:  2px 2px 2px #999797;
+}
+
+.btn-img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+label{
+    color: white;
+    font-size: large;
+}
+
+.vol-bar{
+    position: absolute;
+    margin: -180px 0 0 150px;
+    display: none;
+}
+.vol-bar.active {
+    display: block;
+}
+.vol-bar-container {
+    position: relative;
+}
+#volume {
+    position: absolute;
+    margin: -200px 0 0 150px; 
+}
+.canal{
+    color: rgb(31, 32, 32);
+}

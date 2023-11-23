@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Combustível</title>
+    <link rel="shortcut icon" href="Imagens/Gasoline.jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Calculadora de Combustível</h1>
+
+    <img src="imagens/veloz.jpg" id="imagem">
+
+    <form name="frdados">
+        <input type="text" name="txetanol" size="10" placeholder="ETANOL" autofocus>
+        <input type="text" name="txgasolina" size="10" placeholder="GASOLINA">
+        <input type="button" value="Calcular" onclick="calcularMelhorCombustivel()">
+        <input type="reset" value="Limpar" onclick="limparImagem()">
+    </form>
+
+    <script>
+        function calcularMelhorCombustivel() {
+            var etanol = parseFloat(frdados.txetanol.value.replace(",", "."));
+            var gasolina = parseFloat(frdados.txgasolina.value.replace(",", "."));
+
+            if (isNaN(etanol) || isNaN(gasolina)) {
+                alert("Por favor, insira valores válidos para etanol e gasolina.");
+                return;
+            }
+
+            if (etanol < 0.7 * gasolina) {
+                trocarImagem("Imagens/etanol.jpeg");
+            } else {
+                trocarImagem("Imagens/Gasoline.jpeg");
+            }
+        }
+
+        function limparImagem() {
+            trocarImagem("Imagens/veloz.jpg");
+        }
+
+        function trocarImagem(src) {
+            document.getElementById("imagem").src = src;
+        }
+    </script>
+
+</body>
+</html>

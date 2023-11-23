@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title> Formulário</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: rgb(91, 158, 175);
+            color: rgb(7, 1, 1);
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 10px;
+        }
+
+        
+        fieldset {
+            border: 1px solid white;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #0e250f;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0e250f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1><i>Formulário de Pesquisa  </i> </h1>
+
+    <p>
+        Este é um formulário de pesquisa para verificar o nivel de sedentarismos atual .
+    </p>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br>
+
+        <label for="idade">Idade:</label>
+        <input type="Idade" id="Idade" name="idade"><br><br>
+
+    </form>
+
+    <fieldset>
+        <legend>VOCE ESTUDA OU TRABALHA INTEGRALMENTE DURANTE A SEMANA ? </legend>
+        <label for="estado">Informe</label>
+        <select id="estado" name="Campus">
+            <option value=" ">Selecione sua opção atual: </option>
+            <option value="p1">Sim, estudo. </option>
+            <option value="p2">Sim, estudo somente em um periodo do dia</option>
+            <option value="p3">Sim estudo integralmente</option>
+            <option value="p4"> Estudo e Trabalho durante toda semana </option>
+            <option value="p5"> Trabalho um periodo da semana</option>
+        </select>
+    </fieldset>
+    <br> <br>
+
+    <fieldset>
+        <legend>VOCE PRATICA ALGUM TIPO DE EXERCICIO FÍSICO ?</legend>
+       
+        <div class="radio">
+            <b>Selecione</b><br />
+            <input id="1" type="radio" name="option" value="1" />
+            <label for="1">Caminhada</label><br />
+            <input id="2" type="radio" name="option" value="2" />
+            <label for="2">Academia</label><br />
+            <input id="3" type="radio" name="option" value="3" />
+            <label for="3">Cros Fity</label>
+            <input id="4" type="radio" name="option" value="4" />
+            <label for="4">Calistenia</label>
+            <input id="5" type="radio" name="option" value="5" />
+            <label for="5">Dança</label>
+            <input id="6" type="radio" name="option" value="6" />
+            <label for="6">Ciclismo</label>
+            <input id="7" type="radio" name="option" value="7" />
+            <label for="7">Natação</label>
+            <input id="8" type="radio" name="option" value="8" />
+            <label for="8"> Jogos de quadra fechada </label>
+            <input id="9" type="radio" name="option" value="9" />
+            <label for="9"> Jogos de quadra aberta   </label>
+            <input id="10" type="radio" name="option" value="10" />
+            <label for="10">Exercício ao ar livre  </label>
+            <input id="10" type="radio" name="option" value="10" />
+           
+        </div>
+
+
+
+
+<br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</body>
+
+</html>
